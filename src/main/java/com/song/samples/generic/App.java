@@ -1,4 +1,4 @@
-package com.song.samples.plastic;
+package com.song.samples.generic;
 
 import com.google.common.collect.Lists;
 import com.song.samples.Utils.DateUtils;

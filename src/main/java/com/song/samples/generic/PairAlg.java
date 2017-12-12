@@ -1,4 +1,4 @@
-package com.song.samples.plastic;
+package com.song.samples.generic;
 
 /**
  * PairAlg class
