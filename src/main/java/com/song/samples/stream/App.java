@@ -5,6 +5,7 @@ import com.song.samples.Utils.DateUtils;
 
 import java.io.*;
 import java.text.ParseException;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -18,6 +19,14 @@ public class App {
             employees.add(new Employee("Hacker", 55000D, DateUtils.parseDateTime("1991-08-18 08:00:01")));
             employees.add(new Employee("Tester", 45000D, DateUtils.parseDateTime("1992-08-18 08:00:01")));
 
+            Iterator<Employee> iterator = employees.iterator();
+            iterator.next();
+
+            if (iterator.hasNext()) {
+                System.out.println(iterator.next());
+                iterator.remove();
+                iterator.remove();
+            }
             // write data
             PrintWriter out = new PrintWriter(new PrintWriter("employee.dat"));
             writeData(employees, out);
@@ -26,7 +35,6 @@ public class App {
             // read data
             BufferedReader in = new BufferedReader(new FileReader("employee.dat"));
             List<Employee> employees1 = readData(in);
-
             for (Employee employee : employees1) {
                 System.out.println(employee);
             }
