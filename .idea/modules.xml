@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../core_java/chapter18/chapter18.iml" filepath="$PROJECT_DIR$/../core_java/chapter18/chapter18.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../core_java/chapter19/chapter19.iml" filepath="$PROJECT_DIR$/../core_java/chapter19/chapter19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../core_java/chapter2/chapter2.iml" filepath="$PROJECT_DIR$/../core_java/chapter2/chapter2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../core_java/chapter3/chapter3.iml" filepath="$PROJECT_DIR$/../core_java/chapter3/chapter3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../core_java/chapter4/chapter4.iml" filepath="$PROJECT_DIR$/../core_java/chapter4/chapter4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../core_java/chapter6/chapter6.iml" filepath="$PROJECT_DIR$/../core_java/chapter6/chapter6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../core_java/chapter7/chapter7.iml" filepath="$PROJECT_DIR$/../core_java/chapter7/chapter7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../core_java/chapter8/chapter8.iml" filepath="$PROJECT_DIR$/../core_java/chapter8/chapter8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../common-component/common-component.iml" filepath="$PROJECT_DIR$/../common-component/common-component.iml" />
       <module fileurl="file://$PROJECT_DIR$/sample_test.iml" filepath="$PROJECT_DIR$/sample_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../template/template.iml" filepath="$PROJECT_DIR$/../template/template.iml" />
     </modules>
   </component>
 </project>
