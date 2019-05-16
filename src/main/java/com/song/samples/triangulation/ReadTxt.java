@@ -19,6 +19,7 @@ public class ReadTxt {
             x = new double[n];
             y = new double[n];
             System.out.println("Problem array x and y");
+            System.out.println("Problem array x and y");
 
             weight = new double[n][n];
             for (int i = 0; i < n; i++) {
