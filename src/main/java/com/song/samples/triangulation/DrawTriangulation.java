@@ -1,118 +1,177 @@
 package com.song.samples.triangulation;
 
+import com.google.common.collect.Lists;
+
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 import javax.swing.*;
 
-public class DrawTriangulation extends JFrame implements ActionListener {
+public class DrawTriangulation extends JFrame {
 
     private static final long serialVersionUID = 1L;
-    JPanel p1 = new JPanel();
-    JTextArea t1 = new JTextArea();
-    Graphics g1;
-    private int n;
-    int[] x = new int[n];
-    int[] y = new int[n];
-    private int[][] s = new int[n][n];
-    private double[][] t = new double[n][n];
+    private JPanel cards = new JPanel(new CardLayout());
+    private JPanel p0 = new JPanel(); // 面板1
+    private JPanel p1 = new JPanel(); // 面板2
+    private JPanel p2 = new JPanel(); // 面板3
+    private java.util.List<Integer> xList = Lists.newLinkedList();
+    private java.util.List<Integer> yList = Lists.newLinkedList();
 
-    public double[][] getT() {
-        return t;
-    }
+    private Polygon polygon;
+    private Triangulation triangulation;
 
-    public void setT(double[][] t) {
-        this.t = t;
-    }
 
-    @SuppressWarnings("deprecation")
+
     public DrawTriangulation() {
+    }
+
+    public void doDrawTriangulation() {
         this.setTitle("Triangulation");
         this.setSize(600, 600);
         this.setLocation(0, 0);
-        Container c = this.getContentPane();
-        getContentPane().setLayout(null);
-
-        p1.setBounds(0, 0, 600, 600);
-        p1.setLayout(null);
-        c.add(p1);
-
-        JLabel L1 = new JLabel("the sum of the chords�� length");
-        p1.add(L1);
-        L1.setBounds(10, 500, 200, 50);
-
-        p1.add(t1);
-        t1.setBounds(210, 500, 100, 50);
-
-        JButton b1 = new JButton("开始");
-        b1.setBounds(400, 500, 100, 50);
-        p1.add(b1);
-        b1.addActionListener(this);
-
+        this.add(cards);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        this.show();
-    }
+        cards.add(p0, "card0");
+        cards.add(p1, "card1");
+        cards.add(p2, "card2");
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        // TODO Auto-generated method stub
-        String cmd = e.getActionCommand();
-        if (cmd.equals("开始")) {
+        JLabel l1 = new JLabel("最优权重和");
+        l1.setBounds(480, 50, 100, 40);
 
-            Graphics g1 = p1.getGraphics();
-            g1.setColor(Color.black);
-            for (int i = 0; i < n; i++) {
-                g1.drawLine(x[i] * 50 + 10, y[i] * 50 + 10, x[(i + 1) % n] * 50 + 10, y[(i + 1) % n] * 50 + 10);
-                g1.drawString("(" + x[i] + y[i] + ")", x[i] * 50 + 10, y[i] * 50 + 10);
+        JTextArea t1 = new JTextArea();
+        t1.setBounds(480, 150, 100, 100);
 
+        JLabel l2 = new JLabel("文件路径");
+        l2.setBounds(20, 20, 100, 40);
+
+        JTextArea t2 = new JTextArea();
+        t2.setBounds(120, 20, 200, 40);
+        t2.setText("/Users/songzeqi/test1.txt");
+
+
+        JButton b11 = new JButton("选择文件");
+        b11.setBounds(50, 520, 100, 40);
+        b11.addActionListener(e -> {
+            String path = t2.getText();
+            polygon = new Polygon(path);
+            triangulation = new Triangulation(polygon);
+            triangulation.minWeightTriangulation();
+
+        });
+
+        JButton b12 = new JButton("完成绘制");
+        b12.setBounds(50, 520, 100, 40);
+        b12.addActionListener(e -> {
+            Graphics g1 = p2.getGraphics();
+            System.out.println("\nx=" + xList.toString() + ", y=" + yList.toString() + '\n');
+            for(int i = xList.size() - 1; i > 1; i --) {
+                g1.drawLine(xList.get(i), yList.get(i), xList.get(i-1), yList.get(i-1));
             }
-            TraceBack(1, n - 1, s, g1);
+            g1.drawLine(xList.get(xList.size() -1), yList.get(xList.size() - 1), xList.get(0), yList.get(0));
+            polygon = new Polygon(xList, yList);
+            triangulation = new Triangulation(polygon);
+            triangulation.minWeightTriangulation();
+
+        });
+
+
+        JButton b2 = new JButton("开始处理");
+        b2.setBounds(250, 520, 100, 40);
+        b2.addActionListener(e -> {
+            int n = triangulation.getN();
+            double[][] t = triangulation.getT();
+            Graphics g2 = p2.getGraphics();
+            g2.setColor(Color.black);
+            triangulation.drawPolygon(g2);
+            triangulation.traceBack(1, n - 1, g2);
             t1.setText(Double.toString(t[1][n - 1]));
 
-        }
+        });
+
+        JButton b3 = new JButton("返回");
+        b3.setBounds(450, 520, 100, 40);
+        b3.addActionListener(e -> {
+            CardLayout cl = (CardLayout) (cards.getLayout());
+            cl.show(cards, "card0");
+        });
+
+        // 首页面板
+        p0.setLayout(new GridLayout(1, 2, 5, 5));
+        JButton b00 = new JButton("从文件中读取");
+        p0.add(b00);
+        b00.addActionListener(e -> {
+            // 从文件中读取
+            p1.setLayout(null);
+            p1.add(t2);
+            p1.add(l2);
+            p1.add(l1);
+            p1.add(t1);
+            p1.add(b11);
+            p1.add(b2);
+            p1.add(b3);
+            CardLayout cl = (CardLayout) (cards.getLayout());
+            cl.show(cards, "card1");
+        });
+
+
+        p2.addMouseListener(new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                Graphics g1 = p2.getGraphics();
+                xList.add(e.getX());
+                yList.add(e.getY());
+                System.out.println("\nx=" + e.getX() + ", y=" + e.getY() + '\n');
+                for(int i = xList.size() - 1; i >= 1; i --) {
+                    g1.drawLine(xList.get(i), yList.get(i), xList.get(i-1), yList.get(i-1));
+                }
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+
+            }
+        });
+
+        JButton b01 = new JButton("绘制多边形");
+        p0.add(b01);
+        b01.addActionListener(e -> {
+            // 三角剖分展示页
+            p2.setLayout(null); // 使用GridBagLayout布局管理器
+            p2.add(l1);
+            p2.add(t1);
+            p2.add(b12);
+            p2.add(b2);
+            p2.add(b3);
+            CardLayout cl = (CardLayout) (cards.getLayout());
+            cl.show(cards, "card2");
+        });
+
+
+        CardLayout cl = (CardLayout) (cards.getLayout());
+
+        cl.show(cards, "card0"); // 调用show()方法显示面板0
+        this.setVisible(true);
+
     }
 
-    public void TraceBack(int i, int j, int[][] s, Graphics g1) {
-        if (i == j) {
-            return;
-        }
-
-        TraceBack(i, s[i][j], s, g1);
-        g1.drawLine(x[i - 1] * 50 + 10, y[i - 1] * 50 + 10, x[j] * 50 + 10, y[j] * 50 + 10);
-        TraceBack(s[i][j] + 1, j, s, g1);
+    public static void main(String[] args) {
+        DrawTriangulation drawTriangulation = new DrawTriangulation();
+        drawTriangulation.doDrawTriangulation();
     }
-
-    public int getN() {
-        return n;
-    }
-
-    public void setN(int n) {
-        this.n = n;
-    }
-
-    public void setX(int[] x) {
-        this.x = x;
-    }
-
-    public int[] getX1() {
-        return x;
-    }
-
-    public int[] getY1() {
-        return y;
-    }
-
-    public void setY(int[] y) {
-        this.y = y;
-    }
-
-    public int[][] getS() {
-        return s;
-    }
-
-    public void setS(int[][] s) {
-        this.s = s;
-    }
-
 }
