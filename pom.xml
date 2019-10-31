@@ -24,7 +24,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <org.springframework.version>4.3.13.RELEASE</org.springframework.version>
+        <org.springframework.version>5.2.0.RELEASE</org.springframework.version>
         <com.google.guava.version>23.5-jre</com.google.guava.version>
         <joda.time.version>2.9.9</joda.time.version>
         <commons.lang.version>20030203.000129</commons.lang.version>
