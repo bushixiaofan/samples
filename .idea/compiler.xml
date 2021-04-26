@@ -6,17 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="chapter18" />
-        <module name="chapter19" />
-        <module name="chapter2" />
-        <module name="chapter3" />
-        <module name="chapter4" />
-        <module name="chapter6" />
-        <module name="chapter7" />
-        <module name="chapter8" />
-        <module name="common-component" />
-        <module name="sample_test" />
         <module name="template" />
+        <module name="chapter4" />
+        <module name="chapter3" />
+        <module name="sample_test" />
+        <module name="chapter2" />
+        <module name="chapter8" />
+        <module name="chapter7" />
+        <module name="chapter18" />
+        <module name="chapter6" />
+        <module name="chapter19" />
+        <module name="common-component" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -29,8 +29,19 @@
       <module name="chapter7" target="1.5" />
       <module name="chapter8" target="1.5" />
       <module name="common-component" target="1.6" />
-      <module name="sample_test" target="1.7" />
+      <module name="sample_test" target="1.8" />
       <module name="template" target="1.8" />
+      <module name="xy-trade-creditpay" target="1.8" />
+      <module name="xy-trade-creditpay-api" target="1.8" />
+      <module name="xy-trade-creditpay-api-base" target="1.8" />
+      <module name="xy-trade-creditpay-api-cs" target="1.8" />
+      <module name="xy-trade-creditpay-api-lecheck" target="1.8" />
+      <module name="xy-trade-creditpay-api-lecheck-cs" target="1.8" />
+      <module name="xy-trade-creditpay-apis" target="1.8" />
+      <module name="xy-trade-creditpay-app" target="1.8" />
+      <module name="xy-trade-creditpay-repository" target="1.8" />
+      <module name="xy-trade-creditpay-service" target="1.8" />
+      <module name="xy-trade-creditpay-service-adapter" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

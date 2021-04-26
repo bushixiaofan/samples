@@ -17,14 +17,12 @@ public class ProxyFactory {
 
     public Object getProxyInstance() {
         // proxy object
-        return Proxy.newProxyInstance(target.getClass().getClassLoader(), target.getClass().getInterfaces(), new InvocationHandler() {
-            public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-                System.out.println("start transaction2 ...");
-                // execute target class method
-                Object returnValue = method.invoke(target, args);
-                System.out.println("end transaction2 ..");
-                return returnValue;
-            }
+        return Proxy.newProxyInstance(target.getClass().getClassLoader(), target.getClass().getInterfaces(), (proxy, method, args) -> {
+            System.out.println("start transaction2 ...");
+            // execute target class method
+            Object returnValue = method.invoke(target, args);
+            System.out.println("end transaction2 ..");
+            return returnValue;
         });
     }
 
