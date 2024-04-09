@@ -10,71 +10,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f47791a-12e7-447e-b63a-285b32c18eea" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/chainofresponsibility/ConcreteProcessingObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/chainofresponsibility/HeaderTextProcessing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/chainofresponsibility/LambdaProcessingObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/chainofresponsibility/ProcessingObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/chainofresponsibility/SpellCheckerProcessing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/factory/Bond.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/factory/LambdaProductFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/factory/Loan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/factory/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/factory/ProductFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/factory/Stock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/mvc/BPMObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/mvc/BeatBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/mvc/BeatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/mvc/BeatModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/mvc/BeatModelInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/mvc/BeatObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/mvc/ControllerInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/mvc/DJView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/mvc/DjTestDrive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/observer/Feed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/observer/Guardian.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/observer/LambdaFeed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/observer/LeMonde.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/observer/NYTimes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/observer/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/observer/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/strategy/IsAllLowerCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/strategy/IsNumeric.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/strategy/LambdaValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/strategy/ValidationStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/designmode/strategy/Validator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/guava/collection/TestUnionSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/guava/ratelimiter/RateLimiterWarmupTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/guava/ratelimiter/RaterLimiterBurstTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/io/ReadDictionaryAndRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/lucene/Indexer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/multithread/completablefuture/Shop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/multithread/completablefuture/ShopMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/multithread/completablefuture/SupplyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common-component/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common-component/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common-component/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common-component/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common-component/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common-component/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common-component/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common-component/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common-component/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common-component/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../common-component/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../common-component/common-component.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/lambda/BinOp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/lambda/Empty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/lambda/Expr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/lambda/LambdaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/lambda/LazyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/lambda/MyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/lambda/MyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/lambda/Number.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/lambda/PatternMatcherTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/lambda/Tree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/lambda/TreeProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/lambda/TriFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/stream/A.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_all_2_3_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_util_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_43.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_0_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_23_5_jre.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_20030203_000129.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/song/samples/guava/RateLimiterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/guava/ratelimiter/RateLimiterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/song/samples/proxy/ProxyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/song/samples/proxy/ProxyFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/song/samples/FairAndUnfairTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/song/samples/FairAndUnfairTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text" beforeDir="false" afterPath="$PROJECT_DIR$/text" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,6 +121,18 @@
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar:///usr/local/Cellar/openjdk@8/1.8.0+312/libexec/openjdk.jdk/Contents/Home/src.zip!/java/util/function/DoubleUnaryOperator.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///usr/local/Cellar/openjdk@8/1.8.0+312/libexec/openjdk.jdk/Contents/Home/src.zip!/java/util/stream/IntStream.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -152,13 +140,12 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
-      </MavenGeneralSettings>
-    </option>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="1oBOTQElXTLVrbj2F8KyZkCBsVO" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -196,20 +183,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="Object&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar!/java/lang/Object.class&#10;Obj&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/Objects.java&#10;AbstractQueu&#9;PSI&#9;JAVA://java.util.concurrent.locks.AbstractQueuedSynchronizer&#10;threadPoo&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar!/com/sun/corba/se/spi/orbutil/threadpool/ThreadPool.class&#10;org.apache.ibatis.logging.slf4j.Slf4jImpl&#9;PSI&#9;JAVA://org.apache.ibatis.logging.slf4j.Slf4jImpl&#10;Driver&#9;PSI&#9;JAVA://com.mysql.jdbc.Driver&#10;org.springframework.data.redis.cache.RedisCacheManager&#9;PSI&#9;JAVA://org.springframework.data.redis.cache.RedisCacheManager&#10;StringHttpMessageConverter&#9;PSI&#9;JAVA://org.springframework.http.converter.StringHttpMessageConverter&#10;LocalSessionFactoryBuilder&#9;FILE&#9;jar:///Users/songzeqi/.m2/repository/org/springframework/spring-orm/4.2.2.RELEASE/spring-orm-4.2.2.RELEASE.jar!/org/springframework/orm/hibernate4/LocalSessionFactoryBuilder.class&#10;BeanDe&#9;PSI&#9;JAVA://org.springframework.beans.factory.config.BeanDefinition" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/../common-component/src/main/java/com" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
@@ -246,7 +230,7 @@
       <recent name="$PROJECT_DIR$/../common-component/src/main" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LambdaProcessingObject">
+  <component name="RunManager" selected="Application.PatternMatcherTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="HTML_USED" value="false" />
@@ -254,30 +238,13 @@
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
-    <configuration name="BankWaterService2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.song.samples.concurrent.concurrentutils.BankWaterService2" />
-      <module name="sample_test" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.song.samples.concurrent.concurrentutils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConcreteProcessingObject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.song.samples.designmode.chainofresponsibility.ConcreteProcessingObject" />
-      <module name="sample_test" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.song.samples.designmode.chainofresponsibility.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -324,19 +291,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
+    <configuration name="LambdaTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.song.samples.lambda.LambdaTest" />
+      <module name="sample_test" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.song.samples.lambda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="PatternMatcherTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.song.samples.lambda.PatternMatcherTest" />
+      <module name="sample_test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.song.samples.lambda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -591,23 +575,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BankWaterService2" />
-      <item itemvalue="Spring Boot.Application" />
-      <item itemvalue="Tomcat Server.template" />
-      <item itemvalue="Tomcat Server.chapter18" />
-      <item itemvalue="Tomcat Server.chapter2" />
+      <item itemvalue="Application.PatternMatcherTest" />
       <item itemvalue="Application.Feed" />
       <item itemvalue="Application.LambdaFeed" />
-      <item itemvalue="Application.ConcreteProcessingObject" />
       <item itemvalue="Application.LambdaProcessingObject" />
+      <item itemvalue="Application.LambdaTest" />
+      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Tomcat Server.chapter18" />
+      <item itemvalue="Tomcat Server.chapter2" />
+      <item itemvalue="Tomcat Server.template" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LambdaProcessingObject" />
-        <item itemvalue="Application.ConcreteProcessingObject" />
-        <item itemvalue="Application.LambdaFeed" />
-        <item itemvalue="Application.Feed" />
-        <item itemvalue="Application.BankWaterService2" />
+        <item itemvalue="Application.PatternMatcherTest" />
+        <item itemvalue="Application.LambdaTest" />
       </list>
     </recent_temporary>
   </component>
@@ -644,6 +625,13 @@
       <workItem from="1612756529558" duration="5391000" />
       <workItem from="1612840614965" duration="1856000" />
       <workItem from="1619422241300" duration="9416000" />
+      <workItem from="1671106860701" duration="640000" />
+      <workItem from="1672307781036" duration="2767000" />
+      <workItem from="1672388723284" duration="1380000" />
+      <workItem from="1672818077360" duration="9567000" />
+      <workItem from="1712048403245" duration="6489000" />
+      <workItem from="1712548157129" duration="319000" />
+      <workItem from="1712556146233" duration="3643000" />
     </task>
     <servers />
   </component>
@@ -682,36 +670,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="486" y="-827" key="#com.intellij.ide.util.MemberChooser" timestamp="1619443351447">
-      <screen x="-287" y="-1080" width="1920" height="1080" />
-    </state>
-    <state x="486" y="-827" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/-287.-1080.1920.1080@-287.-1080.1920.1080" timestamp="1619443351447" />
-    <state width="1878" height="406" key="GridCell.Tab.0.bottom" timestamp="1619444798189">
-      <screen x="-287" y="-1080" width="1920" height="1080" />
-    </state>
-    <state width="1878" height="406" key="GridCell.Tab.0.bottom/0.0.1440.900/-287.-1080.1920.1080@-287.-1080.1920.1080" timestamp="1619444798189" />
-    <state width="1878" height="406" key="GridCell.Tab.0.center" timestamp="1619444798187">
-      <screen x="-287" y="-1080" width="1920" height="1080" />
-    </state>
-    <state width="1878" height="406" key="GridCell.Tab.0.center/0.0.1440.900/-287.-1080.1920.1080@-287.-1080.1920.1080" timestamp="1619444798187" />
-    <state width="1878" height="406" key="GridCell.Tab.0.left" timestamp="1619444798185">
-      <screen x="-287" y="-1080" width="1920" height="1080" />
-    </state>
-    <state width="1878" height="406" key="GridCell.Tab.0.left/0.0.1440.900/-287.-1080.1920.1080@-287.-1080.1920.1080" timestamp="1619444798185" />
-    <state width="1878" height="406" key="GridCell.Tab.0.right" timestamp="1619444798188">
-      <screen x="-287" y="-1080" width="1920" height="1080" />
-    </state>
-    <state width="1878" height="406" key="GridCell.Tab.0.right/0.0.1440.900/-287.-1080.1920.1080@-287.-1080.1920.1080" timestamp="1619444798188" />
-    <state x="182" y="-901" key="SettingsEditor" timestamp="1612771916930">
-      <screen x="-287" y="-1080" width="1920" height="1080" />
-    </state>
-    <state x="182" y="-901" key="SettingsEditor/0.0.1440.900/-287.-1080.1920.1080@-287.-1080.1920.1080" timestamp="1612771916930" />
-    <state x="182" y="-901" key="SettingsEditor/0.23.1440.877/-287.-1080.1920.1080@-287.-1080.1920.1080" timestamp="1612771360182" />
-    <state x="338" y="-839" width="670" height="676" key="search.everywhere.popup" timestamp="1619426495983">
-      <screen x="-287" y="-1080" width="1920" height="1080" />
-    </state>
-    <state x="338" y="-839" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-287.-1080.1920.1080@-287.-1080.1920.1080" timestamp="1619426495983" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

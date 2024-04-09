@@ -29,7 +29,6 @@
       <module name="chapter7" target="1.5" />
       <module name="chapter8" target="1.5" />
       <module name="common-component" target="1.6" />
-      <module name="sample_test" target="1.8" />
       <module name="template" target="1.8" />
       <module name="xy-trade-creditpay" target="1.8" />
       <module name="xy-trade-creditpay-api" target="1.8" />
